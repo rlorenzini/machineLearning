@@ -17,7 +17,7 @@ Optionally, run ```pip install --upgrade pip``` if needed.
 
 ## Why Learn Machine Learning?
 
-Without knowing it, you have used a website, application, or another piece of technology which utilizes machine learning. Do you play Chess against an AI? Do you have a spam folder for your emails?
+Without knowing it, you have used a website, application, or another piece of technology which utilizes machine learning. Do you play Chess against an AI? Do you have a spam folder for your emails? Machine learning is everywhere, and as a programmer it is the future of the industry. Machine learning can be used to improve websites, games, technologies, and so on, but also provide a custom user experience based on the actions taken by the user. Whether you are creating a suggestion list on a shopping website or having a robot traverse a maze, machine learning is the best way to improve such features. 
 
 ## Three machine learning Types:
 1. Unsupervised
