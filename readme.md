@@ -40,7 +40,7 @@ Go to the Graphviz website (www.graphviz.org) and install Graphviz for your devi
 
 Line 28, shown above, will output our data as a .doc file, which displays as such.
 
-<img src="images/treedocfile"/>
+<img src="/images/treedocfile"/>
 
 In the terminal, run the following code after Graphviz is installed to convert the .doc file into a .png file.
 
@@ -48,6 +48,6 @@ In the terminal, run the following code after Graphviz is installed to convert t
 
 tree.doc is out output file from our Graphviz export. Converting it into a .png file displays the following.
 
-<img src="images/treepngfile"/>
+<img src="/images/treepngfile"/>
 
-Now we are able to view the decisions made by the tree and how often each decision was made. With 105 samples, we see 34 of the petals are less than 0.75 cm in width. For the ones larger than that, 34 are less than 4.95 cm in width and 37 are over 4.95 cm in width. 
+Now we are able to view the decisions made by the tree and how often each decision was made. With 105 samples, we see 34 of the petals are less than 0.75 cm in width. For the ones larger than that, 34 are less than 4.95 cm in width and 37 are over 4.95 cm in width.
