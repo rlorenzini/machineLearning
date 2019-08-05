@@ -23,3 +23,6 @@ plt.xlabel('petal length [cm]')
 plt.ylabel('petal width [cm]')
 plt.legend(loc = 'upper left')
 plt.show()
+
+from sklearn.tree import export_graphviz
+export_graphviz(tree, out_file = 'tree.doc', feature_names = ['petal length', 'petal width'])

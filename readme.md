@@ -17,7 +17,7 @@ Optionally, run ```pip install --upgrade pip``` if needed.
 
 ## Why Learn Machine Learning?
 
-Without knowing it, you have used a website, application, or another piece of technology which utilizes machine learning. Do you play Chess against an AI? Do you have a spam folder for your emails? Machine learning is everywhere, and as a programmer it is the future of the industry. Machine learning can be used to improve websites, games, technologies, and so on, but also provide a custom user experience based on the actions taken by the user. Whether you are creating a suggestion list on a shopping website or having a robot traverse a maze, machine learning is the best way to improve such features. 
+Without knowing it, you have used a website, application, or another piece of technology which utilizes machine learning. Do you play Chess against an AI? Do you have a spam folder for your emails? Machine learning is everywhere, and as a programmer it is the future of the industry. Machine learning can be used to improve websites, games, technologies, and so on, but also provide a custom user experience based on the actions taken by the user. Whether you are creating a suggestion list on a shopping website or having a robot traverse a maze, machine learning is the best way to improve such features.
 
 ## Three machine learning Types:
 1. Unsupervised
@@ -29,3 +29,25 @@ Without knowing it, you have used a website, application, or another piece of te
 **Supervised learning** takes the data and, instead of clustering the data, tries to establish a linear relation between the data. On one side of the line are emails which are acceptable and the other side of the line are spam emails. This is called linear regression. There is also logistic regression, which draws a nonlinear line. This allows for more flexibility but also greater errors and issues depending on the incoming data. Which supervised learning regression is best is determined by the data being looked at by your algorithm.
 
 **Reinforcement learning** works differently than the previous two. The Agent looks at the Environment and tries to learn the best possible actions. The Agent is the algorithm, or AI, the Environment is the data, which can be a game like chess, and the action is what the Agent does based on the information given. In Chess, the Agent will look at the board, the pieces it has versus you, previous data and strategies, win/losses based on movesets, and so forth. The Agent will then move the piece and register if the move was positive or negative. The positive and negative feedback is the reward the Agent receives. The Agent uses the rewards to better itself the next time it plays the game.
+
+## Viewing Your Data
+
+*Graphviz* is used on Linux, MacOS, and Windows to view machine learning data in a top-down decision tree format. You can view the data on a graph, which will show you how the data is grouped, but seeing how your algorithm thinks is very important when coding machine learning algorithms.
+
+Go to the Graphviz website (www.graphviz.org) and install Graphviz for your device. There are also other install options, such as homebrew for MacOS. I built this using MacOS, so the following instructions will be specific to MacOS.
+
+```export_graphviz(tree, out_file = 'tree.doc', feature_names = ['petal length', 'petal width'])```
+
+Line 28, shown above, will output our data as a .doc file, which displays as such.
+
+<img src="images/treedocfile"/>
+
+In the terminal, run the following code after Graphviz is installed to convert the .doc file into a .png file.
+
+```dot -Tpng tree.doc -o tree.png```
+
+tree.doc is out output file from our Graphviz export. Converting it into a .png file displays the following.
+
+<img src="images/treepngfile"/>
+
+Now we are able to view the decisions made by the tree and how often each decision was made. With 105 samples, we see 34 of the petals are less than 0.75 cm in width. For the ones larger than that, 34 are less than 4.95 cm in width and 37 are over 4.95 cm in width. 
