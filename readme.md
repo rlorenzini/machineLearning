@@ -10,6 +10,7 @@ Built using Python 3.7.4 on a MacBook Pro.
 5. scikit_learn     ```pip3 install scikit_learn```
 6. numpy            ```pip3 install numpy```
 7. scipy            ```pip3 install scipy```
+8. surprise (KNN)   ```pip3 install surprise```
 
 Optionally, run ```pip install --upgrade pip``` if needed.
 
@@ -51,3 +52,9 @@ tree.doc is out output file from our Graphviz export. Converting it into a .png 
 <img src="images/treepngfile.png"/>
 
 Now we are able to view the decisions made by the tree and how often each decision was made. With 105 samples, we see 34 of the petals are less than 0.75 cm in width. For the ones larger than that, 34 are less than 4.95 cm in width and 37 are over 4.95 cm in width.
+
+## K-Nearest Neighbor
+
+*KNN* is a *supervised learning algorithm* and is known as a "lazy learner". There is no trained data module for KNN to work from, but instead it stores the data it receives to make decisions. KNN chooses the number of k and a distance metric, determined by the programmer, finds the nearest neighbors, and assigns the neighbors based on a majority vote. Simply put, it finds the most like data and recommends it. **KNN** is commonly used for friend recommendations on websites or apps, taking in likes, dislikes, searches, friends, and other criteria to compare you with others and find those most similar to you.
+
+The scope of KNN is determined by the programmer and the data pool it has to work with. An app with 100 users and 3 criteria will be less effective than an app with 100,000 users and 200 criteria.
